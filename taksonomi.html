@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taksonomi Bunga Bougenville</title>
+    <style>
+        :root {
+            --primary: #9C27B0;
+            --secondary: #7B1FA2;
+            --accent: #E91E63;
+            --light: #F3E5F5;
+            --dark: #4A148C;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .taxonomy-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .taxonomy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .taxonomy-table th {
+            background-color: var(--light);
+            padding: 12px;
+            text-align: left;
+            width: 30%;
+        }
+        
+        .taxonomy-table td {
+            padding: 12px;
+            border-bottom: 1px solid #EEE;
+        }
+        
+        .species-section {
+            margin-top: 3rem;
+        }
+        
+        .species-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .species-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .species-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .species-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--light);
+        }
+        
+        .species-info {
+            padding: 1.2rem;
+        }
+        
+        .species-name {
+            color: var(--dark);
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        
+        .species-scientific {
+            color: var(--accent);
+            font-style: italic;
+            margin: 0 0 1rem 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, var(--secondary), var(--dark));
+            color: white;
+            margin-top: 3rem;
+        }
+        
+        .morphology {
+            margin-top: 2rem;
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .taxonomy-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taksonomi Tanaman Bougenville</h1>
+        <p>Bunga Kertas (Genus Bougainvillea)</p>
+    </header>
+    
+    <div class="container">
+        <section class="taxonomy-card">
+            <h2>Klasifikasi Ilmiah</h2>
+            <p>Bougenville atau bunga kertas adalah tanaman hias populer yang termasuk dalam keluarga Nyctaginaceae.</p>
+            
+            <table class="taxonomy-table">
+                <tr>
+                    <th>Kingdom</th>
+                    <td>Plantae (Tumbuhan)</td>
+                </tr>
+                <tr>
+                    <th>Divisi</th>
+                    <td>Magnoliophyta (Tumbuhan berbunga)</td>
+                </tr>
+                <tr>
+                    <th>Kelas</th>
+                    <td>Magnoliopsida (Dikotil)</td>
+                </tr>
+                <tr>
+                    <th>Ordo</th>
+                    <td>Caryophyllales</td>
+                </tr>
+                <tr>
+                    <th>Famili</th>
+                    <td>Nyctaginaceae</td>
+                </tr>
+                <tr>
+                    <th>Genus</th>
+                    <td><em>Bougainvillea</em></td>
+                </tr>
+            </table>
+            
+            <div class="morphology">
+                <h3>Ciri Morfologi</h3>
+                <p>Bougenville memiliki ciri khas berupa:</p>
+                <ul>
+                    <li>Bunga kecil berwarna putih yang dikelilingi oleh braktea berwarna-warni (biasa dianggap sebagai bunga)</li>
+                    <li>Batang berkayu dengan duri</li>
+                    <li>Daun tunggal berbentuk oval atau elips</li>
+                    <li>Tumbuh merambat atau menjuntai</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="species-section">
+            <h2>Spesies Utama Bougenville</h2>
+            <p>Berikut adalah beberapa spesies Bougenville yang paling umum ditemukan:</p>
+            
+            <div class="species-grid">
+                <div class="species-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bougainvillea_spectabilis.jpg/800px-Bougainvillea_spectabilis.jpg" alt="Bougainvillea spectabilis" class="species-img">
+                    <div class="species-info">
+                        <h3 class="species-name">Bougenville Spektakuler</h3>
+                        <p class="species-scientific">Bougainvillea spectabilis</p>
+                        <p>Spesies yang paling umum, memiliki braktea besar berwarna merah muda hingga ungu. Tumbuh cepat dan bisa mencapai tinggi 12 meter.</p>
+                    </div>
+                </div>
+                
+                <div class="species-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bougainvillea_glabra_1.jpg/800px-Bougainvillea_glabra_1.jpg" alt="Bougainvillea glabra" class="species-img">
+                    <div class="species-info">
+                        <h3 class="species-name">Bougenville Licin</h3>
+                        <p class="species-scientific">Bougainvillea glabra</p>
+                        <p>Memiliki daun lebih kecil dan halus, braktea berwarna ungu. Lebih tahan dingin dan sering digunakan untuk bonsai.</p>
+                    </div>
+                </div>
+                
+                <div class="species-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Bougainvillea_peruviana_%27Juanita_Hatton%27_flowers_2018-01-07_01.jpg/800px-Bougainvillea_peruviana_%27Juanita_Hatton%27_flowers_2018-01-07_01.jpg" alt="Bougainvillea peruviana" class="species-img">
+                    <div class="species-info">
+                        <h3 class="species-name">Bougenville Peru</h3>
+                        <p class="species-scientific">Bougainvillea peruviana</p>
+                        <p>Memiliki braktea berwarna magenta cerah, tumbuh lebih menjuntai daripada merambat. Asli dari Peru dan Ekuador.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="taxonomy-card">
+            <h2>Habitat dan Distribusi</h2>
+            <p>Bougenville berasal dari Amerika Selatan, terutama Brasil, Peru, dan Argentina. Kini telah menyebar ke berbagai daerah tropis dan subtropis di seluruh dunia.</p>
+            
+            <h3>Karakteristik Pertumbuhan:</h3>
+            <ul>
+                <li>Tumbuh optimal di daerah dengan sinar matahari penuh</li>
+                <li>Memerlukan drainase tanah yang baik</li>
+                <li>Toleran terhadap kekeringan</li>
+                <li>Sensitif terhadap suhu dingin (di bawah 5°C)</li>
+                <li>Dapat tumbuh di ketinggian hingga 1.000 mdpl</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Taksonomi Bougenville | Sumber: Royal Horticultural Society, Kew Gardens</p>
+    </footer>
+</body>
+</html>
